@@ -11,6 +11,7 @@ echo "======================================"
 echo ""
 
 bash "$ROOT_DIR/install/system.sh"
+bash "$ROOT_DIR/install/git.sh"
 
 echo ""
 echo "Bootstrap finished successfully."

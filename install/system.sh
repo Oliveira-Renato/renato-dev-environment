@@ -25,5 +25,4 @@ unzip \
 zip \
 tree \
 htop \
-btop \
-fastfetch
+btop 
