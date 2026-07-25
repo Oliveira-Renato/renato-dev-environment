@@ -13,6 +13,7 @@ echo ""
 bash "$ROOT_DIR/install/system.sh"
 bash "$ROOT_DIR/install/git.sh"
 bash "$ROOT_DIR/install/ssh.sh"
+bash "$ROOT_DIR/install/shell.sh"
 
 echo ""
 echo "Bootstrap finished successfully."
