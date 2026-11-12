@@ -1,0 +1,43 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$php\
+$nodejs\
+$docker_context\
+$line_break\
+$character
+"""
+
+[directory]
+format = "[$path]($style) "
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bold purple"
+
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+style = "bold red"
+
+[php]
+symbol = " "
+format = "[$symbol$version]($style) "
+style = "bold"
+
+[nodejs]
+symbol = " "
+format = "[$symbol$version]($style) "
+style = "bold"
+
+[docker_context]
+symbol = " "
+format = "[$symbol$context]($style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"

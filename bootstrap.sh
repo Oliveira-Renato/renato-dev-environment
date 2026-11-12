@@ -9,6 +9,9 @@ run_full_install() {
     bash "$ROOT_DIR/install/git.sh"
     bash "$ROOT_DIR/install/ssh.sh"
     bash "$ROOT_DIR/install/shell.sh"
+    bash "$ROOT_DIR/install/docker.sh"
+    bash "$ROOT_DIR/install/php.sh"
+    bash "$ROOT_DIR/install/node.sh"
 }
 
 success() {
@@ -75,16 +78,16 @@ while true; do
             bash "$ROOT_DIR/install/shell.sh"
             ;;
 
-        6)
-            echo "Docker module not implemented yet."
-            ;;
+	6)
+    	    bash "$ROOT_DIR/install/docker.sh"
+    	    ;;
 
         7)
-            echo "PHP module not implemented yet."
+            bash "$ROOT_DIR/install/php.sh"
             ;;
 
         8)
-            echo "Node module not implemented yet."
+             bash "$ROOT_DIR/install/node.sh"
             ;;
 
         9)
